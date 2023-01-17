@@ -18,6 +18,10 @@
 		D11B183729602B6400DC6AEE /* lottie1.json in Resources */ = {isa = PBXBuildFile; fileRef = D11B183429602B6400DC6AEE /* lottie1.json */; };
 		D11B183829602B6400DC6AEE /* lottie2.json in Resources */ = {isa = PBXBuildFile; fileRef = D11B183529602B6400DC6AEE /* lottie2.json */; };
 		D11B183A29602BD900DC6AEE /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11B183929602BD900DC6AEE /* Then.swift */; };
+		D1907F0729775F4500F02D1D /* TopNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1907F0629775F4500F02D1D /* TopNavBar.swift */; };
+		D1907F0929775FC500F02D1D /* MovableSlides.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1907F0829775FC500F02D1D /* MovableSlides.swift */; };
+		D1907F0B2977617F00F02D1D /* ButtonStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1907F0A2977617F00F02D1D /* ButtonStack.swift */; };
+		D1907F0D297761E300F02D1D /* ResizableLottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1907F0C297761E300F02D1D /* ResizableLottieView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		D11B183429602B6400DC6AEE /* lottie1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = lottie1.json; path = IntroSlider/Lottie/lottie1.json; sourceTree = "<group>"; };
 		D11B183529602B6400DC6AEE /* lottie2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = lottie2.json; path = IntroSlider/Lottie/lottie2.json; sourceTree = "<group>"; };
 		D11B183929602BD900DC6AEE /* Then.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Then.swift; sourceTree = "<group>"; };
+		D1907F0629775F4500F02D1D /* TopNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNavBar.swift; sourceTree = "<group>"; };
+		D1907F0829775FC500F02D1D /* MovableSlides.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovableSlides.swift; sourceTree = "<group>"; };
+		D1907F0A2977617F00F02D1D /* ButtonStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStack.swift; sourceTree = "<group>"; };
+		D1907F0C297761E300F02D1D /* ResizableLottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizableLottieView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,13 +76,14 @@
 		D11B1819296022A800DC6AEE /* IntroSlider */ = {
 			isa = PBXGroup;
 			children = (
+				D1907F0F2977690900F02D1D /* Common */,
+				D1907F0E2977620F00F02D1D /* Screen */,
 				D11B182C2960231700DC6AEE /* Model */,
 				D11B182B2960230F00DC6AEE /* View */,
 				D11B181A296022A800DC6AEE /* IntroSliderApp.swift */,
 				D11B181C296022A800DC6AEE /* ContentView.swift */,
 				D11B181E296022AA00DC6AEE /* Assets.xcassets */,
 				D11B1820296022AA00DC6AEE /* Preview Content */,
-				D11B183929602BD900DC6AEE /* Then.swift */,
 			);
 			path = IntroSlider;
 			sourceTree = "<group>";
@@ -90,7 +99,10 @@
 		D11B182B2960230F00DC6AEE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D11B182F2960238600DC6AEE /* OnboardingScreen.swift */,
+				D1907F0629775F4500F02D1D /* TopNavBar.swift */,
+				D1907F0829775FC500F02D1D /* MovableSlides.swift */,
+				D1907F0A2977617F00F02D1D /* ButtonStack.swift */,
+				D1907F0C297761E300F02D1D /* ResizableLottieView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -101,6 +113,22 @@
 				D11B182D2960232700DC6AEE /* OnboardingItem.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D1907F0E2977620F00F02D1D /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				D11B182F2960238600DC6AEE /* OnboardingScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		D1907F0F2977690900F02D1D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D11B183929602BD900DC6AEE /* Then.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,7 +213,11 @@
 				D11B18302960238600DC6AEE /* OnboardingScreen.swift in Sources */,
 				D11B181D296022A800DC6AEE /* ContentView.swift in Sources */,
 				D11B181B296022A800DC6AEE /* IntroSliderApp.swift in Sources */,
+				D1907F0729775F4500F02D1D /* TopNavBar.swift in Sources */,
+				D1907F0929775FC500F02D1D /* MovableSlides.swift in Sources */,
 				D11B183A29602BD900DC6AEE /* Then.swift in Sources */,
+				D1907F0D297761E300F02D1D /* ResizableLottieView.swift in Sources */,
+				D1907F0B2977617F00F02D1D /* ButtonStack.swift in Sources */,
 				D11B182E2960232700DC6AEE /* OnboardingItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
